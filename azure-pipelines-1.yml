@@ -1,4 +1,7 @@
 trigger:
+- task: TerraformInstaller@1
+  inputs:
+    terraformVersion: 'latest'
 - main
 
 pool:
