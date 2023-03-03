@@ -25,7 +25,7 @@ stages:
         displayName: Terraform Install
         inputs:
           terraformVersion: 'latest'
-      - task: TerraformCLI@00
+      - task: TerraformCLI@0
         displayName: Terraform Init
         inputs:
           command: 'init'
@@ -37,7 +37,7 @@ stages:
           backendAzureRmContainerName: 'tfstatefiles'
           backendAzureRmKey: 'aks-base.tfstate'
           allowTelemetryCollection: false
-      - task: TerraformCLI@00
+      - task: TerraformCLI@0
         displayName: Terraform Validate
         inputs:
           command: 'validate'
